@@ -9,7 +9,7 @@
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
     host.innerHTML = pool.slice(0, 24)
-      .map(img => `<img src="../shared/images/${img.src}" alt="">`)
+      .map(img => `<img src="/shared/images/${img.src}" alt="">`)
       .join('');
   }
 })();

@@ -7,7 +7,7 @@
 
 (function () {
   const STORAGE_KEY = 'psk-lang';
-  const PATH = '../shared/'; // demos live one level deep
+  const PATH = '/shared/'; // absolute path so it works regardless of trailing slash
 
   function $$(sel, root) { return Array.from((root || document).querySelectorAll(sel)); }
   function $(sel, root)  { return (root || document).querySelector(sel); }

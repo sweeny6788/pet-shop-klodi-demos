@@ -11,7 +11,7 @@
     }
     tiles.forEach((tile, i) => {
       const img = pool[i % pool.length];
-      tile.style.backgroundImage = `url('../shared/images/${img.src}')`;
+      tile.style.backgroundImage = `url('/shared/images/${img.src}')`;
     });
   }
 
@@ -44,7 +44,7 @@
       return `
         <article class="prod-card">
           <div class="prod-img">
-            <img loading="lazy" src="../shared/images/${img.src}" alt="${title}">
+            <img loading="lazy" src="/shared/images/${img.src}" alt="${title}">
             <span class="prod-badge">${badges[i]}</span>
           </div>
           <div class="prod-body">
