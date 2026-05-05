@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Shop Klodi — Demo Picker</title>
+<meta name="description" content="Four design demos for Pet Shop Klodi — pick the one you like.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #0c0e12; color: #f5f5f5; line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(255,107,107,.18), transparent 50%),
+      radial-gradient(circle at 80% 100%, rgba(78,205,196,.18), transparent 50%);
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 60px 24px; }
+  header { text-align: center; max-width: 720px; margin: 0 auto 60px; }
+  header .badge {
+    display: inline-block; padding: 6px 14px; background: rgba(255,255,255,.06);
+    border-radius: 999px; font-size: .76rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .14em; margin-bottom: 16px;
+    color: #95e1c1; border: 1px solid rgba(149,225,193,.3);
+  }
+  header h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800;
+    letter-spacing: -.02em; line-height: 1.15; margin: 0 0 16px;
+  }
+  header p { color: rgba(255,255,255,.65); font-size: 1.05rem; margin: 0; }
+  .grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+  }
+  @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    position: relative; background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08); border-radius: 20px;
+    padding: 32px; transition: all .3s ease; overflow: hidden;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.18);
+    background: rgba(255,255,255,.06); }
+  .card .num {
+    width: 44px; height: 44px; display: grid; place-items: center;
+    background: var(--c, #4ecdc4); color: #0c0e12; border-radius: 12px;
+    font-weight: 800; font-size: 1.1rem; margin-bottom: 18px;
+  }
+  .card h2 {
+    font-size: 1.5rem; font-weight: 800; margin: 0 0 8px;
+  }
+  .card .sub {
+    font-size: .82rem; color: var(--c, #4ecdc4); font-weight: 600;
+    text-transform: uppercase; letter-spacing: .12em; margin-bottom: 16px;
+  }
+  .card p { color: rgba(255,255,255,.7); margin: 0 0 20px; font-size: .95rem; }
+  .card .pros {
+    list-style: none; padding: 0; margin: 0 0 24px;
+    display: grid; gap: 6px;
+  }
+  .card .pros li {
+    font-size: .88rem; color: rgba(255,255,255,.85);
+    padding-left: 22px; position: relative;
+  }
+  .card .pros li::before {
+    content: '✓'; position: absolute; left: 0; top: 0; color: var(--c, #4ecdc4);
+    font-weight: 800;
+  }
+  .card .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .card .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 10px;
+    font-weight: 700; font-size: .9rem; transition: all .2s ease;
+  }
+  .btn-primary { background: var(--c, #4ecdc4); color: #0c0e12; }
+  .btn-primary:hover { transform: translateY(-1px); filter: brightness(1.1); }
+  .btn-ghost { color: #fff; border: 1px solid rgba(255,255,255,.18); }
+  .btn-ghost:hover { background: rgba(255,255,255,.08); }
+
+  .card.d1 { --c: #b25c3a; }
+  .card.d2 { --c: #ff6b6b; }
+  .card.d3 { --c: #8b5a2b; }
+  .card.d4 { --c: #00c389; }
+
+  footer {
+    text-align: center; padding: 40px 24px;
+    color: rgba(255,255,255,.5); font-size: .85rem;
+  }
+  footer p { margin: 6px 0; }
+  footer a { color: rgba(255,255,255,.7); text-decoration: underline; }
+  .meta {
+    display: inline-flex; gap: 16px; flex-wrap: wrap; padding: 12px 20px;
+    background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+    border-radius: 999px; font-size: .82rem; margin-top: 18px;
+  }
+  .meta b { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="badge">🐾 Pet Shop Klodi · Demo gallery</span>
+    <h1>Pick a design for the new site</h1>
+    <p>Same content, four different vibes. Open each, click around, then tell me which one — or which mix — to ship.</p>
+    <div class="meta">
+      <span>📍 <b>Rruga e Dibrës 70, Tiranë</b></span>
+      <span>📞 <b>+355 67 338 6643</b></span>
+      <span>🌐 <b>EN / SQ</b></span>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <article class="card d1">
+      <div class="num">01</div>
+      <p class="sub">Modern Boutique</p>
+      <h2>Premium · photography-led</h2>
+      <p>Calm cream &amp; terracotta palette, serif headings, generous whitespace. Lets your photos do the talking.</p>
+      <ul class="pros">
+        <li>Looks high-end and curated</li>
+        <li>Best for trust &amp; credibility</li>
+        <li>Slim animated hero slideshow</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn-primary" href="demo1-boutique/index.html">Open demo 1 →</a>
+      </div>
+    </article>
+
+    <article class="card d2">
+      <div class="num">02</div>
+      <p class="sub">Playful &amp; Family</p>
+      <h2>Bright · friendly · animated</h2>
+      <p>Coral, teal &amp; yellow with rounded shapes, bobbing emoji, and a morphing hero blob. Built to feel warm and welcoming.</p>
+      <ul class="pros">
+        <li>Best for families &amp; kids</li>
+        <li>Memorable, joyful first impression</li>
+        <li>Colour-coded category cards</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn-primary" href="demo2-playful/index.html">Open demo 2 →</a>
+      </div>
+    </article>
+
+    <article class="card d3">
+      <div class="num">03</div>
+      <p class="sub">Local Storefront</p>
+      <h2>Earthy · authentic · local</h2>
+      <p>Warm browns and forest green, full-bleed photo mosaic, hours and address always visible at the top. Feels like the real shop.</p>
+      <ul class="pros">
+        <li>Best for walk-in / local trust</li>
+        <li>Hours &amp; phone always one click away</li>
+        <li>Big edge-to-edge photo gallery</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn-primary" href="demo3-storefront/index.html">Open demo 3 →</a>
+      </div>
+    </article>
+
+    <article class="card d4">
+      <div class="num">04</div>
+      <p class="sub">E-commerce Style</p>
+      <h2>Catalogue · product-driven</h2>
+      <p>Clean retailer layout — shop-by-category tiles, product cards with mock prices, dark video showcase. Looks like a real online store.</p>
+      <ul class="pros">
+        <li>Best if you want to sell online later</li>
+        <li>Easy to scale to real products</li>
+        <li>Modern dark-accent design</li>
+      </ul>
+      <div class="actions">
+        <a class="btn btn-primary" href="demo4-ecommerce/index.html">Open demo 4 →</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<footer>
+  <p>All four demos share the same content, photos and videos — bilingual EN / SQ.</p>
+  <p>Built by <a href="mailto:contact@skylinedevelopmenthub.com">Skyline Development Hub</a> for Pet Shop Klodi.</p>
+</footer>
+
+</body>
+</html>

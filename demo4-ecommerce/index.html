@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Shop Klodi — pet store in Tirana</title>
+<meta name="description" content="Pet store in Tirana — birds, fish, food, accessories. Shop by category at Pet Shop Klodi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/common.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav-wrap">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.5 9.5a3 3 0 1 1 0-.001Zm15 0a3 3 0 1 1 0-.001ZM8 5.5a3 3 0 1 1 0-.001Zm8 0a3 3 0 1 1 0-.001Zm-4 6c2.8 0 6 3 6 6 0 1.7-1.3 3-3 3-1 0-2-.5-3-.5s-2 .5-3 .5c-1.7 0-3-1.3-3-3 0-3 3.2-6 6-6Z"/></svg>
+      </span>
+      <span class="brand-name">Pet Shop Klodi</span>
+    </a>
+    <nav class="nav-links" data-mobile-nav>
+      <a href="#categories" data-i18n="nav.products"></a>
+      <a href="#products" data-i18n="nav.services"></a>
+      <a href="#gallery" data-i18n="nav.gallery"></a>
+      <a href="#videos" data-i18n="nav.videos"></a>
+      <a href="#about" data-i18n="nav.about"></a>
+      <a href="#visit" data-i18n="nav.visit"></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn" data-lang-toggle data-i18n="lang.toggle">SQ</button>
+      <a class="cta-mini" href="#visit" data-i18n="hero.cta.visit"></a>
+      <button class="burger" data-burger aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker" data-i18n="products.kicker"></p>
+      <h1 data-i18n="hero.tagline"></h1>
+      <p class="hero-sub" data-i18n="hero.subtitle"></p>
+      <div class="hero-buttons">
+        <a href="#categories" class="btn btn-primary" data-i18n="hero.cta.shop"></a>
+        <a href="#visit" class="btn btn-ghost" data-i18n="hero.cta.visit"></a>
+      </div>
+      <div class="hero-trust">
+        <div><strong data-i18n="about.stat2.value"></strong><span data-i18n="about.stat2.label"></span></div>
+        <div><strong data-i18n="about.stat3.value"></strong><span data-i18n="about.stat3.label"></span></div>
+        <div><strong data-i18n="about.stat4.value"></strong><span data-i18n="about.stat4.label"></span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-slides" data-hero></div>
+      <div class="hero-tag"><span class="dot"></span><span data-i18n="visit.address"></span>: Tiranë</div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY TILES -->
+<section id="categories" class="section categories">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="kicker" data-i18n="products.kicker"></p>
+      <h2 data-i18n="products.title"></h2>
+      <p class="lead" data-i18n="products.intro"></p>
+    </header>
+    <div class="cat-grid">
+      <a href="#products" class="cat-tile cat-1" data-reveal>
+        <span class="cat-label" data-i18n="cat.parrots.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="#products" class="cat-tile cat-2" data-reveal>
+        <span class="cat-label" data-i18n="cat.canaries.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="#products" class="cat-tile cat-3" data-reveal>
+        <span class="cat-label" data-i18n="cat.finches.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="#products" class="cat-tile cat-4" data-reveal>
+        <span class="cat-label" data-i18n="cat.fish.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="#products" class="cat-tile cat-5" data-reveal>
+        <span class="cat-label" data-i18n="cat.food.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="#products" class="cat-tile cat-6" data-reveal>
+        <span class="cat-label" data-i18n="cat.accessories.title"></span>
+        <span class="cat-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT CARDS -->
+<section id="products" class="section products">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="kicker" data-i18n="nav.services"></p>
+      <h2 data-i18n="products.title"></h2>
+    </header>
+    <div class="prod-grid" data-products></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section gallery">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="kicker" data-i18n="gallery.kicker"></p>
+      <h2 data-i18n="gallery.title"></h2>
+      <p class="lead" data-i18n="gallery.intro"></p>
+    </header>
+    <div class="gallery-filter" data-reveal>
+      <button class="is-active" data-filter="all" data-i18n="gallery.filter.all"></button>
+      <button data-filter="birds" data-i18n="gallery.filter.birds"></button>
+      <button data-filter="fish" data-i18n="gallery.filter.fish"></button>
+      <button data-filter="shop" data-i18n="gallery.filter.shop"></button>
+    </div>
+    <div class="gallery-grid" data-gallery></div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="section videos">
+  <div class="wrap">
+    <header class="section-head light" data-reveal>
+      <p class="kicker" data-i18n="videos.kicker"></p>
+      <h2 data-i18n="videos.title"></h2>
+      <p class="lead" data-i18n="videos.intro"></p>
+    </header>
+    <div class="videos-grid" data-videos></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="wrap about-grid">
+    <div data-reveal>
+      <p class="kicker" data-i18n="about.kicker"></p>
+      <h2 data-i18n="about.title"></h2>
+      <p data-i18n="about.body1"></p>
+      <p data-i18n="about.body2"></p>
+    </div>
+    <div class="about-grid-images" data-reveal>
+      <img src="../shared/images/IMG-20260505-WA0098.jpg" alt="">
+      <img src="../shared/images/IMG-20260505-WA0142.jpg" alt="">
+      <img src="../shared/images/IMG-20260505-WA0161.jpg" alt="">
+      <img src="../shared/images/IMG-20260505-WA0103.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section reviews">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="kicker" data-i18n="reviews.kicker"></p>
+      <h2 data-i18n="reviews.title"></h2>
+    </header>
+    <div class="reviews-grid">
+      <blockquote class="quote" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p data-i18n="reviews.r1.text"></p>
+        <cite><b data-i18n="reviews.r1.name"></b><span data-i18n="reviews.r1.role"></span></cite>
+      </blockquote>
+      <blockquote class="quote" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p data-i18n="reviews.r2.text"></p>
+        <cite><b data-i18n="reviews.r2.name"></b><span data-i18n="reviews.r2.role"></span></cite>
+      </blockquote>
+      <blockquote class="quote" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p data-i18n="reviews.r3.text"></p>
+        <cite><b data-i18n="reviews.r3.name"></b><span data-i18n="reviews.r3.role"></span></cite>
+      </blockquote>
+      <blockquote class="quote" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p data-i18n="reviews.r4.text"></p>
+        <cite><b data-i18n="reviews.r4.name"></b><span data-i18n="reviews.r4.role"></span></cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit" class="section visit">
+  <div class="wrap visit-grid">
+    <div class="visit-info" data-reveal>
+      <p class="kicker" data-i18n="visit.kicker"></p>
+      <h2 data-i18n="visit.title"></h2>
+      <div class="visit-block"><h3 data-i18n="visit.address"></h3><p><span data-shop="address-line1"></span><br><span data-shop="address-line2"></span></p></div>
+      <div class="visit-block"><h3 data-i18n="visit.phone"></h3><p><a data-shop="phone-link" href="#"><span data-shop="phone"></span></a></p></div>
+      <div class="visit-block"><h3 data-i18n="visit.hours"></h3><ul class="hours" data-hours></ul></div>
+      <div class="visit-actions">
+        <a class="btn btn-primary" data-shop="directions-link" target="_blank" rel="noopener" href="#" data-i18n="visit.directions"></a>
+        <a class="btn btn-ghost" data-shop="whatsapp-link" target="_blank" rel="noopener" href="#" data-i18n="contact.whatsapp"></a>
+      </div>
+    </div>
+    <div class="visit-map" data-reveal>
+      <iframe data-shop="map-iframe" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="wrap contact-grid">
+    <div data-reveal>
+      <p class="kicker" data-i18n="contact.kicker"></p>
+      <h2 data-i18n="contact.title"></h2>
+      <p data-i18n="contact.intro"></p>
+    </div>
+    <form class="contact-form" data-contact-form data-reveal novalidate>
+      <div class="form-row cols-2">
+        <input required name="name" data-i18n-attr="placeholder:contact.name" placeholder="Your name">
+        <input required type="email" name="email" data-i18n-attr="placeholder:contact.email" placeholder="Your email">
+      </div>
+      <input name="phone" data-i18n-attr="placeholder:contact.phone" placeholder="Phone (optional)">
+      <textarea required name="message" rows="4" data-i18n-attr="placeholder:contact.message" placeholder="Message"></textarea>
+      <button class="btn btn-primary" type="submit" data-i18n="contact.send"></button>
+      <p class="form-status" data-contact-status hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram" class="section instagram">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="kicker" data-shop="instagram-handle"></p>
+      <h2 data-i18n="ig.title"></h2>
+    </header>
+    <div class="ig-grid" data-instagram></div>
+    <p class="ig-cta" data-reveal><a class="btn btn-primary" data-shop="instagram-link" target="_blank" rel="noopener" href="#" data-i18n="ig.cta"></a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-name">Pet Shop Klodi</p>
+      <p data-i18n="footer.tagline"></p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.quick"></h4>
+      <ul>
+        <li><a href="#categories" data-i18n="nav.products"></a></li>
+        <li><a href="#products" data-i18n="nav.services"></a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery"></a></li>
+        <li><a href="#visit" data-i18n="nav.visit"></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contactH"></h4>
+      <p><span data-shop="address"></span></p>
+      <p><a data-shop="phone-link" href="#"><span data-shop="phone"></span></a></p>
+      <p><a data-shop="instagram-link" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <small data-i18n="footer.copyright"></small>
+    <small data-i18n="footer.builtby"></small>
+  </div>
+</footer>
+
+<script src="../shared/shop-data.js"></script>
+<script src="../shared/translations.js"></script>
+<script src="../shared/media.js"></script>
+<script src="../shared/core.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
